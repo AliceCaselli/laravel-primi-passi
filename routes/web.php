@@ -20,20 +20,20 @@ Route::get('/', function () {
         'faq',
     ];
     return view('home', compact('links'));
-});
+})->name('home');
 
 Route::get('/about', function () {
     $name = 'Alice';
     return view('about', compact('name'));
-});
+})->name('about');
 
 Route::get('/contacts', function () {
     $address = 'via del codice, 30';
     $phone = '333-3366990';
     $location = 'Città';
     return view('contacts', compact('address', 'phone', 'location'));
-});
+})->name('contacts');
 
 Route::get('/faq', function () {
     return view('faq');
-});
+})->name('faq');

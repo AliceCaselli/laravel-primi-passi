@@ -14,7 +14,7 @@
 
         <ul>
             @foreach($links as $link)
-            <li><a href="/{{$link}}">{{$link}}</a></li>
+            <li><a href="{{ route($link) }}">{{$link}}</a></li>
             @endforeach
         </ul>
     </nav>
