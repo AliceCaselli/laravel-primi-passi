@@ -8,9 +8,9 @@
 </head>
 <body>
     <ul>
-        <li><strong>Address:</strong>via del codice, 30</li>
-        <li><strong>Phone:</strong>333-3366990</li>
-        <li><strong>Location:</strong>Città</li>
+        <li><strong>Address: </strong>{{$address}}</li>
+        <li><strong>Phone: </strong>{{$phone}}</li>
+        <li><strong>Location: </strong>{{$location}}</li>
     </ul>
 </body>
 </html>

@@ -14,15 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = [
+        'about',
+        'contacts',
+        'faq',
+    ];
+    return view('home', compact('links'));
 });
 
 Route::get('/about', function () {
-    return view('about');
+    $name = 'Alice';
+    return view('about', compact('name'));
 });
 
 Route::get('/contacts', function () {
-    return view('contacts');
+    $address = 'via del codice, 30';
+    $phone = '333-3366990';
+    $location = 'Città';
+    return view('contacts', compact('address', 'phone', 'location'));
 });
 
 Route::get('/faq', function () {

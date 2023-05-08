@@ -13,15 +13,9 @@
     <nav>
 
         <ul>
-            <li>
-                <a href="/about">About us</a>
-            </li>
-            <li>
-                <a href="/contacts">Contacts</a>
-            </li>
-            <li>
-                <a href="/faq">FAQ</a>
-            </li>
+            @foreach($links as $link)
+            <li><a href="/{{$link}}">{{$link}}</a></li>
+            @endforeach
         </ul>
     </nav>
     
